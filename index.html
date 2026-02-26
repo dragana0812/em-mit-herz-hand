@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E&M Mit Herz&Hand | Reinigung & Hausmeisterservice in Dortmund</title>
+
+<meta name="description" content="E&M Mit Herz&Hand – Professionelle Reinigung, Hausmeisterservice, Gartenpflege, Umzüge und Wellness in Dortmund. Notdienst verfügbar.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#1b263b;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:fixed;
+    width:100%;
+    z-index:1000;
+    box-sizing:border-box;
+}
+
+nav img{
+    height:60px;
+}
+
+.menu a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#1b263b;
+    font-weight:500;
+}
+
+.menu a:hover{
+    color:#4ea8de;
+}
+
+/* HERO */
+.hero{
+    margin-top:100px;
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    background:rgba(0,0,0,0.4);
+    padding:20px 40px;
+    border-radius:10px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 40px;
+    background:#4ea8de;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.button:hover{
+    background:#3a86c6;
+}
+
+/* SECTIONS */
+section{
+    padding:90px 80px;
+    box-sizing:border-box;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* SERVICES */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#f8f9fb;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align:center;
+}
+
+/* List styling inside cards */
+.card ul{
+    text-align:left;
+    margin:15px 0 0 0;
+    padding-left:18px;
+}
+
+/* NOTDIENST */
+.emergency{
+    background:#e63946;
+    color:white;
+    text-align:center;
+}
+
+/* CONTACT */
+.contact{
+    background:#f8f9fb;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+input,textarea{
+    margin-bottom:20px;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* FOOTER */
+footer{
+    background:#1b263b;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        padding:20px;
+    }
+    .hero h1{
+        font-size:35px;
+        padding:15px 20px;
+    }
+    section{
+        padding:70px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <img src="logo.png" alt="E&M Mit Herz&Hand Logo">
+    <div class="menu">
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#prices">Preise</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Sauberkeit mit Herz</h1>
+
+    <!-- OTVARA EMAIL -->
+    <a class="button"
+       href="mailto:dragana12mraovic@gmail.com?subject=Angebot%20anfordern%20-%20E%26M%20Mit%20Herz%26Hand&body=Guten%20Tag,%0A%0Aich%20interessiere%20mich%20für%20folgende%20Dienstleistung:%0A%0AName:%0ATelefon:%0AAdresse%20(optional):%0AWunschtermin:%0A%0ANachricht:%0A">
+       Angebot anfordern
+    </a>
+</section>
+
+<section id="about">
+    <h2>Über uns</h2>
+    <p style="max-width:900px;margin:auto;text-align:center;">
+      <strong>E&M Mit Herz&Hand</strong> ist ein Familienunternehmen in Dortmund.
+      Wir bieten professionelle Dienstleistungen für Privatkunden, Hausverwaltungen und kleine Unternehmen.
+      Alle Tätigkeiten werden legal und im Rahmen der gesetzlichen Bestimmungen ausgeführt.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="grid">
+        <div class="card">Hausmeisterservice</div>
+        <div class="card">Gebäudereinigung</div>
+        <div class="card">Gartenpflege</div>
+        <div class="card">Private Umzüge</div>
+        <div class="card">Wellness-Massagen</div>
+    </div>
+</section>
+
+<!-- LEISTUNGSUMFANG (DETALJI) -->
+<section id="umfang" style="background:#ffffff;">
+  <h2>Leistungsumfang</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Hausmeisterservice</h3>
+      <ul>
+        <li>Regelmäßige Objektkontrolle</li>
+        <li>Kleinere Instandhaltungsarbeiten</li>
+        <li>Austausch von Leuchtmitteln</li>
+        <li>Pflege von Außenanlagen</li>
+        <li>Winterdienst (Schneeräumung)</li>
+        <li>Mülltonnenservice</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Gebäudereinigung</h3>
+      <ul>
+        <li>Büro- und Wohnungsreinigung</li>
+        <li>Treppenhausreinigung</li>
+        <li>Schulreinigung (keine medizinischen Bereiche)</li>
+        <li>Unterhalts- und Grundreinigung</li>
+        <li>Müllentsorgung</li>
+        <li>Boden- und Möbelpflege</li>
+        <li>Fensterreinigung im zugänglichen Bereich</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Gartenpflege</h3>
+      <ul>
+        <li>Rasen mähen</li>
+        <li>Hecken schneiden</li>
+        <li>Unkraut entfernen</li>
+        <li>Laubarbeiten</li>
+        <li>Pflanzenpflege</li>
+        <li>Allgemeine Gartenpflege</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Private Umzüge</h3>
+      <ul>
+        <li>Umzugshilfe</li>
+        <li>Trage- und Verpackungsservice</li>
+        <li>Unterstützung bei Wohnungswechseln</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Wellness-Massagen</h3>
+      <ul>
+        <li>Entspannungsmassagen</li>
+        <li>Keine medizinischen oder therapeutischen Behandlungen</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:40px;text-align:center;font-size:14px;color:#555;max-width:950px;margin-left:auto;margin-right:auto;">
+    Alle Dienstleistungen werden im Rahmen der gesetzlichen Bestimmungen ausgeführt.
+    Es werden keine meisterpflichtigen, medizinischen oder heilpraktischen Tätigkeiten angeboten.
+  </p>
+</section>
+
+<!-- CIJENIK -->
+<section id="prices" style="background:#f8f9fb;">
+  <h2>Preise (Richtwerte)</h2>
+  <p style="max-width:900px;margin:0 auto 40px auto;text-align:center;color:#555;">
+    Alle Preise verstehen sich als Richtwerte. Der genaue Preis hängt von Aufwand, Größe und Zustand ab.
+    Angebot ist kostenlos & unverbindlich.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Gebäudereinigung</h3>
+      <p>Unterhaltsreinigung (regelmäßig): <strong>ab 25 € / Stunde</strong></p>
+      <p>Grundreinigung (einmalig): <strong>ab 35 € / Stunde</strong></p>
+      <p>Wohnungsreinigung: <strong>ab 59 €</strong></p>
+      <p>Büroreinigung: <strong>ab 69 €</strong></p>
+      <p>Treppenhausreinigung: <strong>ab 49 €</strong></p>
+      <p>Endreinigung / Umzugsreinigung: <strong>ab 149 €</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Hausmeisterservice</h3>
+      <p><strong>ab 30 € / Stunde</strong></p>
+      <p style="color:#555;">inkl. kleinere Tätigkeiten & Objektkontrolle</p>
+    </div>
+
+    <div class="card">
+      <h3>Gartenpflege</h3>
+      <p><strong>ab 30 € / Stunde</strong></p>
+      <p>Pauschale kleine Gartenpflege: <strong>ab 69 €</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Private Umzüge</h3>
+      <p>Umzugshilfe: <strong>ab 35 € / Stunde</strong></p>
+      <p>Pauschale (kleine Umzüge): <strong>ab 199 €</strong></p>
+      <p style="color:#555;">Preis je nach Umfang, Etagen & Entfernung</p>
+    </div>
+
+    <div class="card">
+      <h3>Wellness-Massagen</h3>
+      <p>30 Min: <strong>35 €</strong></p>
+      <p>60 Min: <strong>60 €</strong></p>
+      <p style="color:#555;">Nur zu Entspannungszwecken</p>
+    </div>
+
+    <div class="card">
+      <h3>Notdienst</h3>
+      <p>Zuschlag: <strong>ab 25 €</strong></p>
+      <p style="color:#555;">je nach Uhrzeit & Verfügbarkeit</p>
+    </div>
+  </div>
+</section>
+
+<section class="emergency">
+    <h2>Notdienst</h2>
+    <p>Auch kurzfristig erreichbar</p>
+    <p><strong>01590 1973857</strong></p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <input type="text" placeholder="Ihr Name">
+        <input type="email" placeholder="Ihre E-Mail">
+        <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+        <button class="button" type="button">Nachricht senden</button>
+    </form>
+
+    <p style="text-align:center;color:#555;margin-top:15px;">
+      Oder direkt per E-Mail: <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
+    </p>
+</section>
+
+<section>
+    <h2>Standort</h2>
+    <iframe
+        src="https://www.google.com/maps?q=Dortmund&output=embed"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+
+<footer>
+<strong>E&M Mit Herz&Hand</strong> | Dortmund<br>
+Telefon: 01590 1973857<br>
+E-Mail: dragana12mraovic@gmail.com
+</footer>
+
+<a class="whatsapp" href="https://wa.me/4915901973857" target="_blank" rel="noopener">
+WhatsApp
+</a>
+
+</body>
+</html>
