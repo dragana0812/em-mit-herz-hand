@@ -333,23 +333,39 @@ footer{
   <h2>Kontakt</h2>
 
   <form id="contactForm">
-    <input type="text" name="name" placeholder="Ihr Name" required>
-    <input type="email" name="email" placeholder="Ihre E-Mail" required>
-    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-
-    <input type="hidden" name="_subject" value="Neue Anfrage über die Website – E&M Mit Herz&Hand">
+    <input id="name" type="text" placeholder="Ihr Name" required>
+    <input id="email" type="email" placeholder="Ihre E-Mail" required>
+    <textarea id="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
 
     <button class="button" type="submit">Nachricht senden</button>
-
-    <p id="formError" style="display:none; text-align:center; margin-top:15px; color:#e63946; font-weight:600;">
-      Leider konnte die Nachricht nicht gesendet werden. Bitte versuchen Sie es erneut.
-    </p>
   </form>
 
   <p style="text-align:center;color:#555;margin-top:15px;">
     Oder direkt per E-Mail:
     <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
   </p>
+</section>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const subject = encodeURIComponent("Kontaktanfrage – E&M Mit Herz&Hand");
+  const body = encodeURIComponent(
+    "Name: " + name + "\n" +
+    "E-Mail: " + email + "\n\n" +
+    "Nachricht:\n" + message
+  );
+
+  window.location.href =
+    "mailto:dragana12mraovic@gmail.com?subject=" +
+    subject + "&body=" + body;
+});
+</script>
 </section>
 
 <section>
@@ -401,4 +417,5 @@ footer{
 </script>
 
 </body>
+
 </html>
