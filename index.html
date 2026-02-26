@@ -11,274 +11,201 @@
 
 <style>
 body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:#ffffff;
-    color:#1b263b;
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#ffffff;
+  color:#1b263b;
 }
 
 /* NAVIGATION */
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 80px;
-    background:white;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
-    position:fixed;
-    width:100%;
-    z-index:1000;
-    box-sizing:border-box;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 80px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:fixed;
+  width:100%;
+  z-index:1000;
+  box-sizing:border-box;
 }
 
-nav img{
-    height:60px;
-}
+nav img{ height:60px; }
 
 .menu a{
-    margin-left:30px;
-    text-decoration:none;
-    color:#1b263b;
-    font-weight:500;
+  margin-left:30px;
+  text-decoration:none;
+  color:#1b263b;
+  font-weight:500;
 }
-
-.menu a:hover{
-    color:#4ea8de;
-}
+.menu a:hover{ color:#4ea8de; }
 
 /* HERO */
 .hero{
-    margin-top:100px;
-    height:90vh;
-    background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover no-repeat;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+  margin-top:100px;
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
 }
 
 .hero h1{
-    font-size:60px;
-    background:rgba(0,0,0,0.4);
-    padding:20px 40px;
-    border-radius:10px;
+  font-size:60px;
+  background:rgba(0,0,0,0.4);
+  padding:20px 40px;
+  border-radius:10px;
 }
 
 .button{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 40px;
-    background:#4ea8de;
-    border:none;
-    border-radius:8px;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-    text-decoration:none;
+  display:inline-block;
+  margin-top:30px;
+  padding:15px 40px;
+  background:#4ea8de;
+  border:none;
+  border-radius:8px;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+  text-decoration:none;
 }
-
-.button:hover{
-    background:#3a86c6;
-}
+.button:hover{ background:#3a86c6; }
 
 /* SECTIONS */
 section{
-    padding:90px 80px;
-    box-sizing:border-box;
+  padding:90px 80px;
+  box-sizing:border-box;
 }
 
 h2{
-    text-align:center;
-    margin-bottom:50px;
+  text-align:center;
+  margin-bottom:50px;
 }
 
 /* SERVICES */
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
 }
 
 .card{
-    background:#f8f9fb;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-    text-align:center;
+  background:#f8f9fb;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+  text-align:center;
 }
 
 /* List styling inside cards */
 .card ul{
-    text-align:left;
-    margin:15px 0 0 0;
-    padding-left:18px;
+  text-align:left;
+  margin:15px 0 0 0;
+  padding-left:18px;
 }
 
 /* NOTDIENST */
 .emergency{
-    background:#e63946;
-    color:white;
-    text-align:center;
+  background:#e63946;
+  color:white;
+  text-align:center;
 }
 
 /* CONTACT */
-.contact{
-    background:#f8f9fb;
-}
+.contact{ background:#f8f9fb; }
 
 form{
-    max-width:600px;
-    margin:auto;
-    display:flex;
-    flex-direction:column;
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
 }
 
 input,textarea{
-    margin-bottom:20px;
-    padding:15px;
-    border-radius:8px;
-    border:1px solid #ccc;
+  margin-bottom:20px;
+  padding:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
 }
 
 /* FOOTER */
 footer{
-    background:#1b263b;
-    color:white;
-    text-align:center;
-    padding:30px;
+  background:#1b263b;
+  color:white;
+  text-align:center;
+  padding:30px;
 }
 
 /* WHATSAPP */
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    nav{
-        padding:20px;
-    }
-    .hero h1{
-        font-size:35px;
-        padding:15px 20px;
-    }
-    section{
-        padding:70px 20px;
-    }
+  nav{ padding:20px; }
+  .hero h1{
+    font-size:35px;
+    padding:15px 20px;
+  }
+  section{ padding:70px 20px; }
 }
 </style>
 </head>
-<script>
-  const form = document.getElementById("contactForm");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch("https://formspree.io/f/meelnzkr", {
-        method: "POST",
-        body: formData,
-        headers: { "Accept": "application/json" }
-      });
-
-      if (response.ok) {
-        form.reset();
-        window.location.href = "danke.html";   // ✅ redirect na tvoju Danke stranicu
-      } else {
-        alert("Leider konnte die Nachricht nicht gesendet werden. Bitte versuchen Sie es erneut.");
-      }
-    } catch (err) {
-      alert("Fehler beim Senden. Bitte prüfen Sie Ihre Internetverbindung.");
-    }
-  });
-</script>
 <body>
 
 <nav>
-    <img src="logo.png" alt="E&M Mit Herz&Hand Logo">
-    <div class="menu">
-        <a href="#about">Über uns</a>
-        <a href="#services">Leistungen</a>
-        <a href="#prices">Preise</a>
-        <a href="#contact">Kontakt</a>
-    </div>
+  <img src="logo.png" alt="E&M Mit Herz&Hand Logo">
+  <div class="menu">
+    <a href="#about">Über uns</a>
+    <a href="#services">Leistungen</a>
+    <a href="#prices">Preise</a>
+    <a href="#contact">Kontakt</a>
+  </div>
 </nav>
 
-<section class="contact" id="contact">
-  <h2>Kontakt</h2>
-
-  <form id="contactForm">
-  <input type="text" name="name" placeholder="Ihr Name" required>
-  <input type="email" name="email" placeholder="Ihre E-Mail" required>
-  <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-
-  <input type="hidden" name="_subject" value="Neue Anfrage über die Website – E&M Mit Herz&Hand">
-
-  <button class="button" type="submit">Nachricht senden</button>
-</form>
-
-  <p style="text-align:center;color:#555;margin-top:15px;">
-    Oder direkt per E-Mail:
-    <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
-  </p>
-</section>
-
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    const subject = encodeURIComponent("Kontaktanfrage – E&M Mit Herz&Hand");
-    const body = encodeURIComponent(
-      "Guten Tag,\n\n" +
-      "Name: " + name + "\n" +
-      "E-Mail: " + email + "\n\n" +
-      "Nachricht:\n" + message + "\n"
-    );
-
-    window.location.href = "mailto:dragana12mraovic@gmail.com?subject=" + subject + "&body=" + body;
-  });
-</script>
-
+<section class="hero">
+  <h1>Sauberkeit mit Herz</h1>
+  <a class="button"
+     href="mailto:dragana12mraovic@gmail.com?subject=Angebot%20anfordern%20-%20E%26M%20Mit%20Herz%26Hand&body=Guten%20Tag,%0A%0Aich%20interessiere%20mich%20für%20folgende%20Dienstleistung:%0A%0AName:%0ATelefon:%0AWunschtermin:%0A%0ANachricht:%0A">
+     Angebot anfordern
+  </a>
 </section>
 
 <section id="about">
-    <h2>Über uns</h2>
-    <p style="max-width:900px;margin:auto;text-align:center;">
-      <strong>E&M Mit Herz&Hand</strong> ist ein Familienunternehmen in Dortmund.
-      Wir bieten professionelle Dienstleistungen für Privatkunden, Hausverwaltungen und kleine Unternehmen.
-      Alle Tätigkeiten werden legal und im Rahmen der gesetzlichen Bestimmungen ausgeführt.
-    </p>
+  <h2>Über uns</h2>
+  <p style="max-width:900px;margin:auto;text-align:center;">
+    <strong>E&M Mit Herz&Hand</strong> ist ein Familienunternehmen in Dortmund.
+    Wir bieten professionelle Dienstleistungen für Privatkunden, Hausverwaltungen und kleine Unternehmen.
+    Alle Tätigkeiten werden legal und im Rahmen der gesetzlichen Bestimmungen ausgeführt.
+  </p>
 </section>
 
 <section id="services">
-    <h2>Unsere Leistungen</h2>
-    <div class="grid">
-        <div class="card">Hausmeisterservice</div>
-        <div class="card">Gebäudereinigung</div>
-        <div class="card">Gartenpflege</div>
-        <div class="card">Private Umzüge</div>
-        <div class="card">Wellness-Massagen</div>
-    </div>
+  <h2>Unsere Leistungen</h2>
+  <div class="grid">
+    <div class="card">Hausmeisterservice</div>
+    <div class="card">Gebäudereinigung</div>
+    <div class="card">Gartenpflege</div>
+    <div class="card">Private Umzüge</div>
+    <div class="card">Wellness-Massagen</div>
+  </div>
 </section>
 
-<!-- LEISTUNGSUMFANG (DETALJI) -->
 <section id="umfang" style="background:#ffffff;">
   <h2>Leistungsumfang</h2>
 
@@ -344,7 +271,6 @@ footer{
   </p>
 </section>
 
-<!-- CIJENIK -->
 <section id="prices" style="background:#f8f9fb;">
   <h2>Preise (Richtwerte)</h2>
   <p style="max-width:900px;margin:0 auto 40px auto;text-align:center;color:#555;">
@@ -398,54 +324,81 @@ footer{
 </section>
 
 <section class="emergency">
-    <h2>Notdienst</h2>
-    <p>Auch kurzfristig erreichbar</p>
-    <p><strong>01590 1973857</strong></p>
+  <h2>Notdienst</h2>
+  <p>Auch kurzfristig erreichbar</p>
+  <p><strong>01590 1973857</strong></p>
 </section>
 
-<form action="https://formspree.io/f/meelnzkr" method="POST">
-  <input type="text" name="name" placeholder="Ihr Name" required>
-  <input type="email" name="email" placeholder="Ihre E-Mail" required>
-  <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+<section class="contact" id="contact">
+  <h2>Kontakt</h2>
 
-  <input type="hidden" name="_subject" value="Neue Anfrage über die Website – E&M Mit Herz&Hand">
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+    <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
 
-  <!-- PREUSMJERAVANJE -->
-  <input type="hidden" name="_redirect" value="https://dragana0812.github.io/em-mit-herz-hand/danke.html">
+    <input type="hidden" name="_subject" value="Neue Anfrage über die Website – E&M Mit Herz&Hand">
 
-  <button class="button" type="submit">Nachricht senden</button>
-</form>
-</p>
-    <h2>Kontakt</h2>
-    <form>
-        <input type="text" placeholder="Ihr Name">
-        <input type="email" placeholder="Ihre E-Mail">
-        <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
-        <button class="button" type="button">Nachricht senden</button>
-    </form>
+    <button class="button" type="submit">Nachricht senden</button>
 
-    <p style="text-align:center;color:#555;margin-top:15px;">
-      Oder direkt per E-Mail: <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
+    <p id="formError" style="display:none; text-align:center; margin-top:15px; color:#e63946; font-weight:600;">
+      Leider konnte die Nachricht nicht gesendet werden. Bitte versuchen Sie es erneut.
     </p>
+  </form>
+
+  <p style="text-align:center;color:#555;margin-top:15px;">
+    Oder direkt per E-Mail:
+    <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
+  </p>
 </section>
 
 <section>
-    <h2>Standort</h2>
-    <iframe
-        src="https://www.google.com/maps?q=Dortmund&output=embed"
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
+  <h2>Standort</h2>
+  <iframe
+    src="https://www.google.com/maps?q=Dortmund&output=embed"
+    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
 </section>
 
 <footer>
-<strong>E&M Mit Herz&Hand</strong> | Dortmund<br>
-Telefon: 01590 1973857<br>
-E-Mail: dragana12mraovic@gmail.com
+  <strong>E&M Mit Herz&Hand</strong> | Dortmund<br>
+  Telefon: 01590 1973857<br>
+  E-Mail: dragana12mraovic@gmail.com
 </footer>
 
 <a class="whatsapp" href="https://wa.me/4915901973857" target="_blank" rel="noopener">
-WhatsApp
+  WhatsApp
 </a>
+
+<!-- ✅ JEDINI SCRIPT (Formspree + redirect na danke.html) -->
+<script>
+  const form = document.getElementById("contactForm");
+  const formError = document.getElementById("formError");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    formError.style.display = "none";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/meelnzkr", {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        form.reset();
+        window.location.href = "danke.html";
+      } else {
+        formError.style.display = "block";
+      }
+    } catch (err) {
+      formError.style.display = "block";
+    }
+  });
+</script>
 
 </body>
 </html>
