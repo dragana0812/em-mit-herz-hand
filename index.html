@@ -192,14 +192,43 @@ footer{
     </div>
 </nav>
 
-<section class="hero">
-    <h1>Sauberkeit mit Herz</h1>
+<section class="contact" id="contact">
+  <h2>Kontakt</h2>
 
-    <!-- OTVARA EMAIL -->
-    <a class="button"
-       href="mailto:dragana12mraovic@gmail.com?subject=Angebot%20anfordern%20-%20E%26M%20Mit%20Herz%26Hand&body=Guten%20Tag,%0A%0Aich%20interessiere%20mich%20für%20folgende%20Dienstleistung:%0A%0AName:%0ATelefon:%0AAdresse%20(optional):%0AWunschtermin:%0A%0ANachricht:%0A">
-       Angebot anfordern
-    </a>
+  <form id="contactForm">
+    <input id="name" type="text" placeholder="Ihr Name" required>
+    <input id="email" type="email" placeholder="Ihre E-Mail" required>
+    <textarea id="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+    <button class="button" type="submit">Nachricht senden</button>
+  </form>
+
+  <p style="text-align:center;color:#555;margin-top:15px;">
+    Oder direkt per E-Mail:
+    <a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a>
+  </p>
+</section>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent("Kontaktanfrage – E&M Mit Herz&Hand");
+    const body = encodeURIComponent(
+      "Guten Tag,\n\n" +
+      "Name: " + name + "\n" +
+      "E-Mail: " + email + "\n\n" +
+      "Nachricht:\n" + message + "\n"
+    );
+
+    window.location.href = "mailto:dragana12mraovic@gmail.com?subject=" + subject + "&body=" + body;
+  });
+</script>
+
 </section>
 
 <section id="about">
@@ -347,7 +376,19 @@ footer{
     <p><strong>01590 1973857</strong></p>
 </section>
 
-<section class="contact" id="contact">
+<form action="https://formspree.io/f/meelnzkr" method="POST">
+  <input type="text" name="name" placeholder="Ihr Name" required>
+  <input type="email" name="email" placeholder="Ihre E-Mail" required>
+  <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+  <input type="hidden" name="_subject" value="Neue Anfrage über die Website – E&M Mit Herz&Hand">
+
+  <!-- PREUSMJERAVANJE -->
+  <input type="hidden" name="_redirect" value="https://dragana0812.github.io/em-mit-herz-hand/danke.html">
+
+  <button class="button" type="submit">Nachricht senden</button>
+</form>
+</p>
     <h2>Kontakt</h2>
     <form>
         <input type="text" placeholder="Ihr Name">
