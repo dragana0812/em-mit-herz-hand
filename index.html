@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>E&M Mit Herz&Hand | Reinigung & Hausmeisterservice in Dortmund</title>
 
-<meta name="description" content="E&M Mit Herz&Hand – Professionelle Reinigung, Hausmeisterservice, Gartenpflege und Umzüge in Dortmund. Notdienst verfügbar.">
+<meta name="description" content="E&M Mit Herz&Hand in Dortmund – Gebäudereinigung, Hausmeisterservice, Gartenpflege und private Umzüge. Zuverlässig, flexibel, auch kurzfristig (Notdienst). Kostenloses Angebot. Telefon 01590 1973857.">
+
+<meta name="keywords" content="Reinigung Dortmund, Gebäudereinigung Dortmund, Hausmeisterservice Dortmund, Gartenpflege Dortmund, Umzugshilfe Dortmund, Treppenhausreinigung Dortmund, Büroreinigung Dortmund">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -18,7 +20,6 @@ body{
   color:#1b263b;
 }
 
-/* NAVIGATION */
 nav{
   display:flex;
   justify-content:space-between;
@@ -42,13 +43,12 @@ nav img{ height:60px; }
 }
 .menu a:hover{ color:#4ea8de; }
 
-/* HERO */
 .hero{
   margin-top:100px;
   height:90vh;
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('https://dragana0812.github.io/em-mit-herz-hand/hero.jpg') center/cover no-repeat;
+    url('hero.jpg') center/cover no-repeat;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -59,8 +59,11 @@ nav img{ height:60px; }
 
 .hero h1{
   font-size:60px;
-  padding:25px 50px;
-  border-radius:12px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-top:15px;
 }
 
 .button{
@@ -75,9 +78,7 @@ nav img{ height:60px; }
 }
 .button:hover{ background:#3a86c6; }
 
-section{
-  padding:100px 80px;
-}
+section{ padding:100px 80px; }
 
 h2{
   text-align:center;
@@ -96,6 +97,19 @@ h2{
   border-radius:12px;
   box-shadow:0 5px 20px rgba(0,0,0,0.05);
   text-align:center;
+}
+
+.card ul{
+  text-align:left;
+  padding-left:18px;
+}
+
+.price-box{
+  background:white;
+  border:2px solid #4ea8de;
+  padding:40px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .emergency{
@@ -138,32 +152,111 @@ footer{
   <div class="menu">
     <a href="#about">Über uns</a>
     <a href="#services">Leistungen</a>
+    <a href="#prices">Preise</a>
     <a href="#contact">Kontakt</a>
   </div>
 </nav>
 
 <section class="hero">
   <h1>Sauberkeit mit Herz</h1>
-  <a class="button" href="#contact">Kontakt aufnehmen</a>
+  <p>Reinigung · Hausmeisterservice · Gartenpflege · Umzugshilfe in Dortmund</p>
+  <a class="button" href="#contact">Jetzt Kontakt aufnehmen</a>
 </section>
 
 <section id="about">
   <h2>Über uns</h2>
   <p style="max-width:900px;margin:auto;text-align:center;">
     <strong>E&M Mit Herz&Hand</strong> ist ein Familienunternehmen in Dortmund.
-    Wir stehen für Zuverlässigkeit, Sauberkeit und Professionalität.
+    Wir stehen für Zuverlässigkeit, Professionalität und Qualität.
     Unsere Leistungen richten sich an Privatkunden, Hausverwaltungen und kleine Unternehmen.
+  </p>
+
+  <p style="max-width:900px;margin:20px auto 0 auto;text-align:center;color:#555;">
+    Wir sind in Dortmund und Umgebung im Einsatz – für Wohnungen, Büros, Treppenhäuser und kleine Gewerbeobjekte.
+    Schnell, sauber und zuverlässig – kontaktieren Sie uns für ein kostenloses Angebot.
   </p>
 </section>
 
 <section id="services">
-  <h2>Unsere Leistungen</h2>
+  <h2>Leistungsumfang</h2>
   <div class="grid">
-    <div class="card">Hausmeisterservice</div>
-    <div class="card">Gebäudereinigung</div>
-    <div class="card">Gartenpflege</div>
-    <div class="card">Private Umzüge</div>
-    <div class="card">Wellness-Massagen</div>
+    <div class="card">
+      <h3>Hausmeisterservice</h3>
+      <ul>
+        <li>Objektkontrolle</li>
+        <li>Kleinreparaturen</li>
+        <li>Winterdienst</li>
+        <li>Mülltonnenservice</li>
+        <li>Außenanlagenpflege</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Gebäudereinigung</h3>
+      <ul>
+        <li>Wohnungsreinigung</li>
+        <li>Büroreinigung</li>
+        <li>Treppenhäuser</li>
+        <li>Müllentsorgung</li>
+        <li>Boden- und Möbelpflege</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Gartenpflege</h3>
+      <ul>
+        <li>Rasen mähen</li>
+        <li>Hecken schneiden</li>
+        <li>Unkraut entfernen</li>
+        <li>Pflanzenpflege</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Private Umzüge</h3>
+      <ul>
+        <li>Umzugshilfe</li>
+        <li>Trage- & Verpackungsservice</li>
+        <li>Unterstützung bei Wohnungswechsel</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Wellness-Massagen</h3>
+      <ul>
+        <li>Entspannungsmassagen</li>
+        <li>Nur zu Entspannungszwecken</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prices" style="background:#f8f9fb;">
+  <h2>Preise (Richtwerte)</h2>
+  <div class="grid">
+    <div class="price-box">
+      <h3>Reinigung</h3>
+      <p>ab 25 € / Stunde</p>
+      <p>Endreinigung ab 149 €</p>
+    </div>
+    <div class="price-box">
+      <h3>Hausmeisterservice</h3>
+      <p>ab 30 € / Stunde</p>
+    </div>
+    <div class="price-box">
+      <h3>Gartenpflege</h3>
+      <p>ab 30 € / Stunde</p>
+    </div>
+    <div class="price-box">
+      <h3>Umzüge</h3>
+      <p>ab 35 € / Stunde</p>
+      <p>Klein-Umzug ab 199 €</p>
+    </div>
+    <div class="price-box">
+      <h3>Massagen</h3>
+      <p>30 Min – 35 €</p>
+      <p>60 Min – 60 €</p>
+    </div>
   </div>
 </section>
 
@@ -173,11 +266,10 @@ footer{
   <p><strong>01590 1973857</strong></p>
 </section>
 
-<section id="contact" style="background:#ffffff;text-align:center;">
+<section id="contact" style="text-align:center;">
   <h2>Kontakt</h2>
 
   <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:40px;">
-
     <a href="mailto:dragana12mraovic@gmail.com" style="text-decoration:none; color:#1b263b;">
       <div style="width:80px;height:80px;border-radius:50%;background:#4ea8de;display:flex;align-items:center;justify-content:center;color:white;font-size:30px;margin:auto;">
         <i class="fas fa-envelope"></i>
@@ -198,19 +290,12 @@ footer{
       </div>
       <p style="margin-top:15px;font-weight:600;">Anrufen</p>
     </a>
-
-  </div>
-
-  <div style="margin-top:60px;color:#555;">
-    <p><strong>Telefon:</strong> 01590 1973857</p>
-    <p><strong>E-Mail:</strong> dragana12mraovic@gmail.com</p>
   </div>
 </section>
 
 <section>
   <h2>Standort</h2>
-  <iframe
-    src="https://www.google.com/maps?q=Dortmund&output=embed"
+  <iframe src="https://www.google.com/maps?q=Dortmund&output=embed"
     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
   </iframe>
 </section>
@@ -227,3 +312,4 @@ footer{
 
 </body>
 </html>
+
