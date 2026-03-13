@@ -1,204 +1,580 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E&M Mit Herz & Hand</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E&M Mit Herz & Hand | Reinigung & Hausmeisterservice Dortmund</title>
+  <meta name="description" content="E&M Mit Herz & Hand in Dortmund – Reinigung, Hausmeisterservice, Treppenhausreinigung, Fensterreinigung und Umzugsreinigung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
 
-body{
-font-family:Arial, sans-serif;
-margin:0;
-background:#f7f7f7;
-}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f7f9fc;
+      color:#1f2937;
+      line-height:1.6;
+    }
 
-header{
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-}
+    .topbar{
+      background:#1f2937;
+      color:#fff;
+      font-size:14px;
+      padding:10px 20px;
+      text-align:center;
+    }
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:bold;
-}
+    .topbar a{
+      color:#fff;
+      text-decoration:none;
+      margin:0 10px;
+    }
 
-.logo img{
-height:50px;
-}
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:#ffffff;
+      box-shadow:0 2px 18px rgba(0,0,0,0.08);
+    }
 
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
+    .navbar{
+      max-width:1200px;
+      margin:0 auto;
+      padding:14px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
 
-.hero{
-height:350px;
-background:url("hero.jpg") center/cover;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:40px;
-font-weight:bold;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#1f2937;
+      min-width:0;
+    }
 
-section{
-padding:60px 40px;
-max-width:1100px;
-margin:auto;
-}
+    .brand img{
+      width:62px;
+      height:62px;
+      object-fit:cover;
+      border-radius:14px;
+      display:block;
+      border:2px solid #e5e7eb;
+      background:#fff;
+      flex-shrink:0;
+    }
 
-h2{
-text-align:center;
-margin-bottom:40px;
-}
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+    .brand-title{
+      font-size:22px;
+      font-weight:700;
+      line-height:1.1;
+    }
 
-.service{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-}
+    .brand-subtitle{
+      font-size:13px;
+      color:#6b7280;
+    }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:18px;
-}
+    nav{
+      display:flex;
+      gap:24px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
 
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
+    nav a{
+      text-decoration:none;
+      color:#1f2937;
+      font-weight:600;
+      font-size:15px;
+      transition:0.25s;
+    }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px;
-}
+    nav a:hover{
+      color:#0ea5e9;
+    }
 
-</style>
+    .hero{
+      min-height:88vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('hero.jpg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:60px 20px;
+      color:#fff;
+    }
+
+    .hero-content{
+      max-width:900px;
+    }
+
+    .hero h1{
+      font-size:56px;
+      line-height:1.1;
+      margin-bottom:18px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:28px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 26px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.25s;
+    }
+
+    .btn-primary{
+      background:#0ea5e9;
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#0284c7;
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,0.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.35);
+    }
+
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.2);
+    }
+
+    section{
+      max-width:1200px;
+      margin:0 auto;
+      padding:80px 24px;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:34px;
+      margin-bottom:16px;
+      color:#111827;
+    }
+
+    .section-text{
+      max-width:820px;
+      margin:0 auto;
+      text-align:center;
+      color:#6b7280;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:22px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .card i{
+      font-size:28px;
+      color:#0ea5e9;
+      margin-bottom:14px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      font-size:21px;
+    }
+
+    .prices{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:22px;
+      margin-top:40px;
+    }
+
+    .price-card{
+      background:#fff;
+      border-radius:18px;
+      padding:30px 24px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      text-align:center;
+      border:2px solid #e5e7eb;
+    }
+
+    .price-card h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .price{
+      font-size:28px;
+      font-weight:700;
+      color:#0ea5e9;
+      margin-bottom:10px;
+    }
+
+    .price-note{
+      color:#6b7280;
+      font-size:14px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:18px;
+      margin-top:40px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:16px;
+      box-shadow:0 8px 22px rgba(0,0,0,0.08);
+      display:block;
+      transition:transform 0.25s;
+      background:#fff;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.02);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:22px;
+      margin-top:40px;
+    }
+
+    .contact-box{
+      background:#fff;
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      text-align:center;
+    }
+
+    .contact-box i{
+      font-size:30px;
+      color:#0ea5e9;
+      margin-bottom:14px;
+    }
+
+    .contact-box a{
+      color:#1f2937;
+      text-decoration:none;
+      font-weight:600;
+      word-break:break-word;
+    }
+
+    .map-wrap{
+      margin-top:35px;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .map-wrap iframe{
+      width:100%;
+      height:420px;
+      border:0;
+      display:block;
+    }
+
+    footer{
+      background:#111827;
+      color:#fff;
+      text-align:center;
+      padding:28px 20px;
+      margin-top:40px;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      background:#25D366;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      text-decoration:none;
+      box-shadow:0 10px 22px rgba(0,0,0,0.25);
+      z-index:1200;
+    }
+
+    .whatsapp-float:hover{
+      background:#1fb857;
+    }
+
+    @media (max-width: 768px){
+      .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      nav{
+        width:100%;
+        gap:14px;
+      }
+
+      .brand{
+        width:100%;
+      }
+
+      .brand-title{
+        font-size:19px;
+      }
+
+      .hero h1{
+        font-size:34px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .section-title{
+        font-size:28px;
+      }
+
+      .gallery img{
+        height:220px;
+      }
+
+      .topbar{
+        font-size:12px;
+        line-height:1.7;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
+  <div class="topbar">
+    <a href="tel:+4915901973857"><i class="fas fa-phone"></i> 015901973857</a>
+    <a href="mailto:dragana12mraovic@gmail.com"><i class="fas fa-envelope"></i> dragana12mraovic@gmail.com</a>
+    <span><i class="fas fa-location-dot"></i> Dortmund</span>
+  </div>
 
-<div class="logo">
-<img src="logo.png">
-<span>E&M Mit Herz & Hand</span>
-</div>
+  <header>
+    <div class="navbar">
+      <a href="#" class="brand">
+        <img src="IMG-20260223-WA0000.jpg" alt="E&M Mit Herz & Hand Logo">
+        <div class="brand-text">
+          <span class="brand-title">E&amp;M Mit Herz &amp; Hand</span>
+          <span class="brand-subtitle">Reinigung &amp; Hausmeisterservice in Dortmund</span>
+        </div>
+      </a>
 
-<nav>
-<a href="#about">Über uns</a>
-<a href="#services">Leistungen</a>
-<a href="#arbeit">Unsere Arbeit</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
+      <nav>
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#preise">Preise</a>
+        <a href="#arbeit">Unsere Arbeit</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#map">Standort</a>
+      </nav>
+    </div>
+  </header>
 
-</header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sauberkeit mit Herz &amp; Hand</h1>
+      <p>Zuverlässige Reinigung, Hausmeisterservice und gründliche Arbeit für Wohnungen, Häuser und Treppenhäuser in Dortmund.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#kontakt">Jetzt anfragen</a>
+        <a class="btn btn-secondary" href="https://wa.me/4915901973857" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-<div class="hero">
-Reinigung mit Herz & Hand
-</div>
+  <section id="about">
+    <h2 class="section-title">Über uns</h2>
+    <p class="section-text">
+      E&amp;M Mit Herz &amp; Hand steht für gründliche Reinigung, Zuverlässigkeit und saubere Ergebnisse.
+      Wir arbeiten sorgfältig, pünktlich und flexibel für Privatkunden und kleine Objekte in Dortmund und Umgebung.
+    </p>
+  </section>
 
-<section id="about">
+  <section id="services">
+    <h2 class="section-title">Unsere Leistungen</h2>
+    <p class="section-text">
+      Professionelle Unterstützung rund um Sauberkeit, Pflege und Werterhalt Ihrer Immobilie.
+    </p>
 
-<h2>Über uns</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-house"></i>
+        <h3>Wohnungsreinigung</h3>
+        <p>Gründliche Reinigung von Wohnungen, Häusern und leeren Räumen.</p>
+      </div>
 
-<p style="text-align:center;max-width:700px;margin:auto;">
-Wir bieten professionelle Reinigungsdienste mit Zuverlässigkeit und Sorgfalt.
-Unsere Arbeit steht für Qualität, Vertrauen und zufriedene Kunden.
-</p>
+      <div class="card">
+        <i class="fas fa-building"></i>
+        <h3>Treppenhausreinigung</h3>
+        <p>Saubere Treppenhäuser, Flure und Eingangsbereiche für einen gepflegten Eindruck.</p>
+      </div>
 
-</section>
+      <div class="card">
+        <i class="fas fa-soap"></i>
+        <h3>Grundreinigung</h3>
+        <p>Intensive Reinigung von Böden, Türen, Fenstern und Oberflächen.</p>
+      </div>
 
-<section id="services">
+      <div class="card">
+        <i class="fas fa-screwdriver-wrench"></i>
+        <h3>Hausmeisterservice</h3>
+        <p>Zuverlässige Betreuung und Pflege rund um Haus und Objekt.</p>
+      </div>
+    </div>
+  </section>
 
-<h2>Leistungen</h2>
+  <section id="preise">
+    <h2 class="section-title">Preise</h2>
+    <p class="section-text">
+      Transparente Richtpreise. Genaue Preise nach Aufwand und Vereinbarung.
+    </p>
 
-<div class="services">
+    <div class="prices">
+      <div class="price-card">
+        <h3>Reinigung</h3>
+        <div class="price">ab 25 €</div>
+        <p>pro Stunde</p>
+        <p class="price-note">Je nach Größe und Verschmutzung</p>
+      </div>
 
-<div class="service">
-<h3>Wohnungsreinigung</h3>
-<p>Gründliche Reinigung von Wohnungen und Häusern.</p>
-</div>
+      <div class="price-card">
+        <h3>Treppenhausreinigung</h3>
+        <div class="price">ab 40 €</div>
+        <p>pro Einsatz</p>
+        <p class="price-note">Nach Objektgröße</p>
+      </div>
 
-<div class="service">
-<h3>Treppenhausreinigung</h3>
-<p>Saubere und gepflegte Treppenhäuser für Gebäude.</p>
-</div>
+      <div class="price-card">
+        <h3>Grundreinigung</h3>
+        <div class="price">ab 149 €</div>
+        <p>pro Auftrag</p>
+        <p class="price-note">Individuelles Angebot möglich</p>
+      </div>
 
-<div class="service">
-<h3>Fensterreinigung</h3>
-<p>Streifenfreie Reinigung von Fenstern und Glasflächen.</p>
-</div>
+      <div class="price-card">
+        <h3>Hausmeisterservice</h3>
+        <div class="price">ab 30 €</div>
+        <p>pro Stunde</p>
+        <p class="price-note">Flexibel nach Vereinbarung</p>
+      </div>
+    </div>
+  </section>
 
-<div class="service">
-<h3>Grundreinigung</h3>
-<p>Intensive Reinigung für Wohnungen, Häuser und Büros.</p>
-</div>
+  <section id="arbeit">
+    <h2 class="section-title">Unsere Arbeit</h2>
+    <p class="section-text">
+      Ein Einblick in unsere bisherigen Reinigungsarbeiten und Ergebnisse.
+    </p>
 
-</div>
+    <div class="gallery">
+      <img src="IMG-20260311-WA0030.jpg" alt="Sauberer Boden nach der Reinigung">
+      <img src="IMG-20260311-WA0029.jpg" alt="Gereinigter Raum">
+      <img src="IMG-20260311-WA0031.jpg" alt="Reinigung von Türen und Böden">
+      <img src="20260305_082956.jpg" alt="Treppenhaus Reinigung">
+      <img src="IMG-20260311-WA0032.jpg" alt="Gereinigter Boden">
+      <img src="IMG-20260311-WA0035.jpg" alt="Sauberer Raum mit glänzendem Boden">
+      <img src="IMG-20260311-WA0042.jpg" alt="Backofen Reinigung vorher nachher">
+      <img src="Screenshot_20260311_104332_Facebook.jpg" alt="Türen vorher nachher">
+    </div>
+  </section>
 
-</section>
+  <section id="kontakt">
+    <h2 class="section-title">Kontakt</h2>
+    <p class="section-text">
+      Kontaktieren Sie uns gerne für ein unverbindliches Angebot.
+    </p>
 
-<section id="arbeit">
+    <div class="contact-grid">
+      <div class="contact-box">
+        <i class="fas fa-phone"></i>
+        <h3>Telefon</h3>
+        <p><a href="tel:+4915901973857">015901973857</a></p>
+      </div>
 
-<h2>Unsere Arbeit</h2>
+      <div class="contact-box">
+        <i class="fab fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/4915901973857" target="_blank">Nachricht senden</a></p>
+      </div>
 
-<div class="gallery">
+      <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h3>E-Mail</h3>
+        <p><a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
 
-<img src="IMG-20260311-WA0030.jpg">
-<img src="IMG-20260311-WA0029.jpg">
-<img src="IMG-20260311-WA0031.jpg">
-<img src="20260305_082956.jpg">
-<img src="IMG-20260311-WA0032.jpg">
-<img src="IMG-20260311-WA0035.jpg">
-<img src="IMG-20260311-WA0042.jpg">
-<img src="Screenshot_20260311_104332_Facebook.jpg">
+  <section id="map">
+    <h2 class="section-title">Standort</h2>
+    <p class="section-text">
+      Wir sind in Dortmund und Umgebung für Sie im Einsatz.
+    </p>
 
-</div>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=Dortmund&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-</section>
+  <footer>
+    <p>© 2026 E&amp;M Mit Herz &amp; Hand · Dortmund</p>
+  </footer>
 
-<section id="kontakt">
-
-<h2>Kontakt</h2>
-
-<p style="text-align:center">
-E&M Mit Herz & Hand<br><br>
-Email: info@email.de<br>
-Telefon: +49 XXX XXXXX
-</p>
-
-</section>
-
-<footer>
-
-© 2026 E&M Mit Herz & Hand
-
-</footer>
+  <a class="whatsapp-float" href="https://wa.me/4915901973857" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
