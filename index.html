@@ -1,315 +1,485 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E&M Mit Herz&Hand | Reinigung & Hausmeisterservice in Dortmund</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E&M Mit Herz & Hand | Reinigung & Hausmeisterservice in Dortmund</title>
 
-<meta name="description" content="E&M Mit Herz&Hand in Dortmund – Gebäudereinigung, Hausmeisterservice, Gartenpflege und private Umzüge. Zuverlässig, flexibel, auch kurzfristig (Notdienst). Kostenloses Angebot. Telefon 01590 1973857.">
+  <meta name="description" content="E&M Mit Herz & Hand in Dortmund – Gebäudereinigung, Hausmeisterservice, Gartenpflege und private Umzüge. Zuverlässig, flexibel und professionell. Kostenloses Angebot.">
+  <meta name="keywords" content="Reinigung Dortmund, Gebäudereinigung Dortmund, Hausmeisterservice Dortmund, Gartenpflege Dortmund, Umzugshilfe Dortmund, Treppenhausreinigung Dortmund, Büroreinigung Dortmund">
 
-<meta name="keywords" content="Reinigung Dortmund, Gebäudereinigung Dortmund, Hausmeisterservice Dortmund, Gartenpflege Dortmund, Umzugshilfe Dortmund, Treppenhausreinigung Dortmund, Büroreinigung Dortmund">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-<style>
-body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:#ffffff;
-  color:#1b263b;
-}
+    body {
+      background: #f8f9fb;
+      color: #1b263b;
+      line-height: 1.6;
+    }
 
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 80px;
-  background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
-  position:fixed;
-  width:100%;
-  z-index:1000;
-  box-sizing:border-box;
-}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
 
-nav img{ height:60px; }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1b263b;
+    }
 
-.menu a{
-  margin-left:30px;
-  text-decoration:none;
-  color:#1b263b;
-  font-weight:500;
-}
-.menu a:hover{ color:#4ea8de; }
+    .logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
 
-.hero{
-  margin-top:100px;
-  height:90vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('hero.jpg') center/cover no-repeat;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:white;
-}
+    .menu {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
 
-.hero h1{
-  font-size:60px;
-}
+    .menu a {
+      text-decoration: none;
+      color: #1b263b;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-.hero p{
-  font-size:18px;
-  margin-top:15px;
-}
+    .menu a:hover {
+      color: #4ea8de;
+    }
 
-.button{
-  display:inline-block;
-  margin-top:30px;
-  padding:15px 40px;
-  background:#4ea8de;
-  border-radius:8px;
-  color:white;
-  font-size:18px;
-  text-decoration:none;
-}
-.button:hover{ background:#3a86c6; }
+    .hero {
+      margin-top: 90px;
+      min-height: 90vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
+    }
 
-section{ padding:100px 80px; }
+    .hero h1 {
+      font-size: 58px;
+      max-width: 900px;
+      margin-bottom: 15px;
+    }
 
-h2{
-  text-align:center;
-  margin-bottom:50px;
-}
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 800px;
+    }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-}
+    .button {
+      display: inline-block;
+      background: #4ea8de;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-.card{
-  background:#f8f9fb;
-  padding:40px;
-  border-radius:12px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
-  text-align:center;
-}
+    .button:hover {
+      background: #3a86c6;
+    }
 
-.card ul{
-  text-align:left;
-  padding-left:18px;
-}
+    section {
+      padding: 90px 80px;
+    }
 
-.price-box{
-  background:white;
-  border:2px solid #4ea8de;
-  padding:40px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
 
-.emergency{
-  background:#e63946;
-  color:white;
-  text-align:center;
-}
+    .section-text {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #555;
+      font-size: 17px;
+    }
 
-footer{
-  background:#1b263b;
-  color:white;
-  text-align:center;
-  padding:30px;
-}
+    .section-text + .section-text {
+      margin-top: 18px;
+    }
 
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px 20px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
 
-@media(max-width:768px){
-  nav{ padding:20px; }
-  .hero h1{ font-size:35px; }
-  section{ padding:70px 20px; }
-}
-</style>
+    .card {
+      background: white;
+      padding: 30px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #1b263b;
+      font-size: 22px;
+    }
+
+    .card ul {
+      text-align: left;
+      padding-left: 18px;
+      color: #555;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .price-box {
+      background: white;
+      border: 2px solid #4ea8de;
+      padding: 35px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .price-box h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .price-box p {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .emergency {
+      background: #e63946;
+      color: white;
+      text-align: center;
+      border-radius: 18px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .emergency h2 {
+      margin-bottom: 12px;
+    }
+
+    .emergency p {
+      font-size: 20px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .contact-item {
+      text-decoration: none;
+      color: #1b263b;
+      text-align: center;
+    }
+
+    .contact-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #4ea8de;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+      margin: auto;
+      transition: 0.3s;
+    }
+
+    .contact-item:hover .contact-circle {
+      background: #3a86c6;
+      transform: translateY(-3px);
+    }
+
+    .contact-item p {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .contact-details {
+      margin-top: 50px;
+      color: #555;
+      text-align: center;
+    }
+
+    .map-section iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-top: 30px;
+    }
+
+    footer {
+      background: #1b263b;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+
+      .logo {
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .menu {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .menu a {
+        font-size: 16px;
+      }
+
+      .hero {
+        margin-top: 145px;
+        min-height: auto;
+        padding: 90px 20px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-  <img src="logo.png" alt="E&M Mit Herz&Hand Logo">
-  <div class="menu">
-    <a href="#about">Über uns</a>
-    <a href="#services">Leistungen</a>
-    <a href="#prices">Preise</a>
-    <a href="#contact">Kontakt</a>
-  </div>
-</nav>
-
-<section class="hero">
-  <h1>Sauberkeit mit Herz</h1>
-  <p>Reinigung · Hausmeisterservice · Gartenpflege · Umzugshilfe in Dortmund</p>
-  <a class="button" href="#contact">Jetzt Kontakt aufnehmen</a>
-</section>
-
-<section id="about">
-  <h2>Über uns</h2>
-  <p style="max-width:900px;margin:auto;text-align:center;">
-    <strong>E&M Mit Herz&Hand</strong> ist ein Familienunternehmen in Dortmund.
-    Wir stehen für Zuverlässigkeit, Professionalität und Qualität.
-    Unsere Leistungen richten sich an Privatkunden, Hausverwaltungen und kleine Unternehmen.
-  </p>
-
-  <p style="max-width:900px;margin:20px auto 0 auto;text-align:center;color:#555;">
-    Wir sind in Dortmund und Umgebung im Einsatz – für Wohnungen, Büros, Treppenhäuser und kleine Gewerbeobjekte.
-    Schnell, sauber und zuverlässig – kontaktieren Sie uns für ein kostenloses Angebot.
-  </p>
-</section>
-
-<section id="services">
-  <h2>Leistungsumfang</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Hausmeisterservice</h3>
-      <ul>
-        <li>Objektkontrolle</li>
-        <li>Kleinreparaturen</li>
-        <li>Winterdienst</li>
-        <li>Mülltonnenservice</li>
-        <li>Außenanlagenpflege</li>
-      </ul>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="E&M Mit Herz & Hand Logo">
+      <span>E&amp;M Mit Herz &amp; Hand</span>
     </div>
 
-    <div class="card">
-      <h3>Gebäudereinigung</h3>
-      <ul>
-        <li>Wohnungsreinigung</li>
-        <li>Büroreinigung</li>
-        <li>Treppenhäuser</li>
-        <li>Müllentsorgung</li>
-        <li>Boden- und Möbelpflege</li>
-      </ul>
+    <div class="menu">
+      <a href="#about">Über uns</a>
+      <a href="#services">Leistungen</a>
+      <a href="#prices">Preise</a>
+      <a href="#contact">Kontakt</a>
     </div>
+  </nav>
 
-    <div class="card">
-      <h3>Gartenpflege</h3>
-      <ul>
-        <li>Rasen mähen</li>
-        <li>Hecken schneiden</li>
-        <li>Unkraut entfernen</li>
-        <li>Pflanzenpflege</li>
-      </ul>
-    </div>
+  <section class="hero">
+    <h1>Sauberkeit mit Herz &amp; Hand</h1>
+    <p>Reinigung · Hausmeisterservice · Gartenpflege · private Umzüge in Dortmund</p>
+    <a class="button" href="#contact">Jetzt Kontakt aufnehmen</a>
+  </section>
 
-    <div class="card">
-      <h3>Private Umzüge</h3>
-      <ul>
-        <li>Umzugshilfe</li>
-        <li>Trage- & Verpackungsservice</li>
-        <li>Unterstützung bei Wohnungswechsel</li>
-      </ul>
-    </div>
+  <section id="about">
+    <h2>Über uns</h2>
+    <p class="section-text">
+      <strong>E&amp;M Mit Herz &amp; Hand</strong> ist Ihr zuverlässiger Ansprechpartner in Dortmund für professionelle Reinigung, Hausmeisterservice, Gartenpflege und private Umzüge.
+    </p>
+    <p class="section-text">
+      Wir arbeiten sauber, flexibel und sorgfältig für Privatkunden, Hausverwaltungen und kleine Unternehmen. Unser Ziel ist es, jede Aufgabe pünktlich und professionell zu erledigen.
+    </p>
+  </section>
 
-    <div class="card">
-      <h3>Wellness-Massagen</h3>
-      <ul>
-        <li>Entspannungsmassagen</li>
-        <li>Nur zu Entspannungszwecken</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <section id="services">
+    <h2>Unsere Leistungen</h2>
 
-<section id="prices" style="background:#f8f9fb;">
-  <h2>Preise (Richtwerte)</h2>
-  <div class="grid">
-    <div class="price-box">
-      <h3>Reinigung</h3>
-      <p>ab 25 € / Stunde</p>
-      <p>Endreinigung ab 149 €</p>
-    </div>
-    <div class="price-box">
-      <h3>Hausmeisterservice</h3>
-      <p>ab 30 € / Stunde</p>
-    </div>
-    <div class="price-box">
-      <h3>Gartenpflege</h3>
-      <p>ab 30 € / Stunde</p>
-    </div>
-    <div class="price-box">
-      <h3>Umzüge</h3>
-      <p>ab 35 € / Stunde</p>
-      <p>Klein-Umzug ab 199 €</p>
-    </div>
-    <div class="price-box">
-      <h3>Massagen</h3>
-      <p>30 Min – 35 €</p>
-      <p>60 Min – 60 €</p>
-    </div>
-  </div>
-</section>
-
-<section class="emergency">
-  <h2>Notdienst</h2>
-  <p>Auch kurzfristig erreichbar</p>
-  <p><strong>01590 1973857</strong></p>
-</section>
-
-<section id="contact" style="text-align:center;">
-  <h2>Kontakt</h2>
-
-  <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:40px;">
-    <a href="mailto:dragana12mraovic@gmail.com" style="text-decoration:none; color:#1b263b;">
-      <div style="width:80px;height:80px;border-radius:50%;background:#4ea8de;display:flex;align-items:center;justify-content:center;color:white;font-size:30px;margin:auto;">
-        <i class="fas fa-envelope"></i>
+    <div class="grid">
+      <div class="card">
+        <h3>Hausmeisterservice</h3>
+        <ul>
+          <li>Objektkontrolle</li>
+          <li>Kleinreparaturen</li>
+          <li>Winterdienst</li>
+          <li>Mülltonnenservice</li>
+          <li>Außenanlagenpflege</li>
+        </ul>
       </div>
-      <p style="margin-top:15px;font-weight:600;">E-Mail</p>
-    </a>
 
-    <a href="https://wa.me/4915901973857" target="_blank" style="text-decoration:none; color:#1b263b;">
-      <div style="width:80px;height:80px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;color:white;font-size:30px;margin:auto;">
-        <i class="fab fa-whatsapp"></i>
+      <div class="card">
+        <h3>Gebäudereinigung</h3>
+        <ul>
+          <li>Wohnungsreinigung</li>
+          <li>Büroreinigung</li>
+          <li>Treppenhausreinigung</li>
+          <li>Fensterreinigung</li>
+          <li>Boden- und Möbelpflege</li>
+        </ul>
       </div>
-      <p style="margin-top:15px;font-weight:600;">WhatsApp</p>
-    </a>
 
-    <a href="tel:+4915901973857" style="text-decoration:none; color:#1b263b;">
-      <div style="width:80px;height:80px;border-radius:50%;background:#e63946;display:flex;align-items:center;justify-content:center;color:white;font-size:30px;margin:auto;">
-        <i class="fas fa-phone"></i>
+      <div class="card">
+        <h3>Gartenpflege</h3>
+        <ul>
+          <li>Rasen mähen</li>
+          <li>Hecken schneiden</li>
+          <li>Unkraut entfernen</li>
+          <li>Pflege von Außenanlagen</li>
+        </ul>
       </div>
-      <p style="margin-top:15px;font-weight:600;">Anrufen</p>
-    </a>
-  </div>
-</section>
 
-<section>
-  <h2>Standort</h2>
-  <iframe src="https://www.google.com/maps?q=Dortmund&output=embed"
-    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
-</section>
+      <div class="card">
+        <h3>Private Umzüge</h3>
+        <ul>
+          <li>Umzugshilfe</li>
+          <li>Trage- und Verpackungsservice</li>
+          <li>Unterstützung bei Wohnungswechsel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <strong>E&M Mit Herz&Hand</strong> | Dortmund<br>
-  Telefon: 01590 1973857<br>
-  E-Mail: dragana12mraovic@gmail.com
-</footer>
+  <section id="prices" style="background:#ffffff;">
+    <h2>Preise</h2>
 
-<a class="whatsapp" href="https://wa.me/4915901973857" target="_blank">
-  WhatsApp
-</a>
+    <div class="grid">
+      <div class="price-box">
+        <h3>Reinigung</h3>
+        <p>Preise nach Vereinbarung</p>
+        <p>Individuell je nach Aufwand</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Hausmeisterservice</h3>
+        <p>Preise nach Vereinbarung</p>
+        <p>Flexibel und zuverlässig</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Gartenpflege</h3>
+        <p>Preise nach Vereinbarung</p>
+        <p>Je nach Objekt und Umfang</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Private Umzüge</h3>
+        <p>Preise nach Vereinbarung</p>
+        <p>Persönliches Angebot möglich</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="emergency">
+      <h2>Notdienst</h2>
+      <p>Auch kurzfristig für Sie erreichbar</p>
+      <p><strong>01590 1973857</strong></p>
+    </div>
+  </section>
+
+  <section id="contact" style="background:#ffffff;">
+    <h2>Kontakt</h2>
+
+    <div class="contact-icons">
+      <a class="contact-item" href="mailto:dragana12mraovic@gmail.com">
+        <div class="contact-circle">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p>E-Mail</p>
+      </a>
+
+      <a class="contact-item" href="https://wa.me/4915901973857" target="_blank">
+        <div class="contact-circle">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <p>WhatsApp</p>
+      </a>
+
+      <a class="contact-item" href="tel:+4915901973857">
+        <div class="contact-circle">
+          <i class="fas fa-phone"></i>
+        </div>
+        <p>Anrufen</p>
+      </a>
+    </div>
+
+    <div class="contact-details">
+      <p><strong>Telefon:</strong> 01590 1973857</p>
+      <p><strong>E-Mail:</strong> dragana12mraovic@gmail.com</p>
+      <p><strong>Ort:</strong> Dortmund</p>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Standort</h2>
+    <iframe
+      src="https://www.google.com/maps?q=Dortmund&output=embed"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 E&amp;M Mit Herz &amp; Hand – Dortmund. Alle Rechte vorbehalten.</p>
+  </footer>
 
 </body>
 </html>
-
