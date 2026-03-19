@@ -1,444 +1,1379 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E&M Mit Herz & Hand | Reinigung, Hausmeisterservice & Gartenpflege in Dortmund</title>
+  <meta
+    name="description"
+    content="E&M Mit Herz & Hand aus Dortmund: professionelle Reinigung, Hausmeisterservice, Treppenhausreinigung, Grundreinigung, Gartenpflege und Umzugshilfe – zuverlässig, flexibel und mit persönlichem Service."
+  />
+  <meta
+    name="keywords"
+    content="Reinigung Dortmund, Gebäudereinigung Dortmund, Hausmeisterservice Dortmund, Gartenpflege Dortmund, Treppenhausreinigung Dortmund, Grundreinigung Dortmund, Umzugshilfe Dortmund"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0ea5e9;
+      --primary-dark: #0284c7;
+      --secondary: #1e293b;
+      --accent: #f59e0b;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --success: #22c55e;
+      --shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+      --radius: 20px;
+      --radius-sm: 14px;
+      --max-width: 1180px;
+    }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<title>E&M Mit Herz & Hand | Reinigung & Hausmeisterservice Dortmund</title>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<meta name="description" content="E&M Mit Herz & Hand – Reinigung, Hausmeisterservice, Treppenhausreinigung und Grundreinigung in Dortmund. Zuverlässig und professionell.">
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
-<meta name="keywords" content="Reinigung Dortmund, Gebäudereinigung Dortmund, Hausmeisterservice Dortmund, Treppenhausreinigung Dortmund, Wohnung Reinigung Dortmund">
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-<meta name="robots" content="index, follow">
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    .container {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    .topbar {
+      background: var(--secondary);
+      color: white;
+      font-size: 0.95rem;
+    }
 
-<style>
+    .topbar-inner {
+      min-height: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
+    .topbar-info,
+    .topbar-actions {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-body{
-background:#f8f9fb;
-color:#1b263b;
-}
+    .topbar i {
+      color: #7dd3fc;
+      margin-right: 8px;
+    }
 
-/* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+    }
 
-header{
-background:white;
-box-shadow:0 2px 12px rgba(0,0,0,0.08);
-position:sticky;
-top:0;
-z-index:1000;
-}
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
 
-.navbar{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
 
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-}
+    .brand img {
+      width: 62px;
+      height: 62px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
 
-.brand img{
-width:60px;
-border-radius:10px;
-}
+    .brand-text {
+      min-width: 0;
+    }
 
-.brand-title{
-font-size:22px;
-font-weight:700;
-}
+    .brand-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.2;
+    }
 
-nav{
-display:flex;
-gap:20px;
-}
+    .brand-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
 
-nav a{
-text-decoration:none;
-font-weight:600;
-color:#1b263b;
-}
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: 600;
+    }
 
-/* HERO */
+    .nav-links a:hover {
+      color: var(--primary);
+    }
 
-.hero{
-height:85vh;
-background:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url('hero.jpg') center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
+    .menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      color: var(--secondary);
+      cursor: pointer;
+    }
 
-.hero h1{
-font-size:50px;
-margin-bottom:15px;
-}
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(110deg, rgba(15, 23, 42, 0.78), rgba(14, 165, 233, 0.52)),
+        url('hero.jpg') center/cover no-repeat;
+      color: white;
+    }
 
-.hero p{
-font-size:20px;
-margin-bottom:25px;
-}
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.48), rgba(15, 23, 42, 0.08));
+      pointer-events: none;
+    }
 
-.btn{
-padding:14px 25px;
-border-radius:10px;
-text-decoration:none;
-font-weight:600;
-margin:5px;
-display:inline-block;
-}
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: center;
+      padding: 64px 0;
+    }
 
-.btn-primary{
-background:#0ea5e9;
-color:white;
-}
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+    }
 
-.btn-secondary{
-background:white;
-color:#0ea5e9;
-}
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.08;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
 
-/* SECTION */
+    .hero p {
+      font-size: 1.08rem;
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 28px;
+    }
 
-section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-}
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
 
-.section-title{
-text-align:center;
-font-size:34px;
-margin-bottom:20px;
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: 2px solid transparent;
+    }
 
-/* CARDS */
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 12px 30px rgba(14, 165, 233, 0.25);
+    }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
-}
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
 
-.card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border-color: rgba(255, 255, 255, 0.22);
+    }
 
-/* PRICES */
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px);
+    }
 
-.prices{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
-margin-top:40px;
-}
+    .hero-features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
 
-.price-card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
-text-align:center;
-}
+    .hero-feature {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(12px);
+      padding: 18px;
+      border-radius: 18px;
+    }
 
-.price{
-font-size:28px;
-color:#0ea5e9;
-font-weight:700;
-}
+    .hero-feature strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
 
-/* GALLERY */
+    .quote-card {
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
-}
+    .quote-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
 
-.gallery img{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:14px;
-}
+    .quote-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-size: 0.98rem;
+    }
 
-/* CONTACT */
+    .quote-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
 
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
-}
+    .quote-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--secondary);
+      font-weight: 500;
+    }
 
-.contact-box{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
-text-align:center;
-}
+    .quote-list i {
+      color: var(--success);
+    }
 
-/* FORM */
+    .quote-info {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 0.95rem;
+      color: var(--secondary);
+    }
 
-form{
-max-width:500px;
-margin:40px auto;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
+    section {
+      padding: 88px 0;
+    }
 
-input,textarea{
-padding:12px;
-border-radius:8px;
-border:1px solid #ccc;
-}
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
 
-button{
-padding:12px;
-background:#0ea5e9;
-color:white;
-border:none;
-border-radius:8px;
-font-weight:600;
-}
+    .section-kicker {
+      display: inline-block;
+      color: var(--primary-dark);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.86rem;
+      margin-bottom: 12px;
+    }
 
-/* MAP */
+    .section-title {
+      font-size: clamp(2rem, 3.2vw, 3rem);
+      line-height: 1.15;
+      color: var(--secondary);
+      margin-bottom: 14px;
+      font-weight: 800;
+    }
 
-.map iframe{
-width:100%;
-height:400px;
-border:0;
-border-radius:15px;
-}
+    .section-text {
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
 
-/* WHATSAPP */
+    .about-grid,
+    .contact-grid,
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      align-items: center;
+    }
 
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:30px;
-text-decoration:none;
-}
+    .panel {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px;
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
 
-</style>
+    .about-list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
 
+    .about-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      color: var(--secondary);
+    }
+
+    .about-list i {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #e0f2fe;
+      color: var(--primary-dark);
+      flex-shrink: 0;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      background: linear-gradient(180deg, #ffffff, #f8fafc);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--primary-dark);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .services-grid,
+    .pricing-grid,
+    .gallery,
+    .reviews-grid,
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .service-card,
+    .price-card,
+    .review-card,
+    .faq-item,
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .service-icon,
+    .contact-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+      color: var(--primary-dark);
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3,
+    .price-card h3,
+    .review-card h3,
+    .faq-item h3,
+    .contact-card h3 {
+      font-size: 1.28rem;
+      margin-bottom: 12px;
+      color: var(--secondary);
+    }
+
+    .service-card p,
+    .price-card p,
+    .review-card p,
+    .faq-item p,
+    .contact-card p {
+      color: var(--muted);
+    }
+
+    .service-list,
+    .price-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .service-list li,
+    .price-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--secondary);
+      font-size: 0.96rem;
+    }
+
+    .service-list i,
+    .price-list i {
+      color: var(--success);
+      margin-top: 4px;
+    }
+
+    .price-badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: var(--primary-dark);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .price-amount {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .price-note {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
+    .highlight-box {
+      margin-top: 28px;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      border-radius: 24px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .highlight-box p {
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      background: white;
+    }
+
+    .gallery img:hover {
+      transform: translateY(-5px);
+    }
+
+    .review-stars {
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .review-name {
+      margin-top: 16px;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      position: relative;
+    }
+
+    .step-number {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: var(--primary);
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .contact-stack {
+      display: grid;
+      gap: 20px;
+    }
+
+    .contact-card a {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 15px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      font: inherit;
+      color: var(--text);
+      background: white;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .map-box {
+      overflow: hidden;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      margin-top: 28px;
+    }
+
+    .map-box iframe {
+      display: block;
+      width: 100%;
+      height: 420px;
+      border: 0;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: white;
+      padding: 72px 0 24px;
+      margin-top: 30px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .footer-title {
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+
+    .footer-text,
+    .footer-links a,
+    .footer-bottom {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      margin-top: 30px;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25d366;
+      color: white;
+      box-shadow: 0 16px 34px rgba(37, 211, 102, 0.35);
+      font-size: 1.9rem;
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 1040px) {
+      .hero-inner,
+      .about-grid,
+      .contact-layout,
+      .highlight-box,
+      .contact-grid,
+      .footer-grid,
+      .services-grid,
+      .pricing-grid,
+      .gallery,
+      .reviews-grid,
+      .faq-grid,
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .quote-card {
+        max-width: 700px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 18px 16px 22px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero-features,
+      .services-grid,
+      .pricing-grid,
+      .gallery,
+      .reviews-grid,
+      .faq-grid,
+      .steps,
+      .about-grid,
+      .contact-layout,
+      .contact-grid,
+      .footer-grid,
+      .highlight-box,
+      .form-row,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar-inner,
+      .navbar {
+        align-items: flex-start;
+      }
+
+      .hero {
+        text-align: left;
+      }
+
+      .hero-inner {
+        min-height: auto;
+        padding: 72px 0 56px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<div class="navbar">
-
-<div class="brand">
-<img src="IMG-20260223-WA0000.jpg" alt="E&M Mit Herz & Hand Logo">
-<div class="brand-title">E&M Mit Herz & Hand</div>
-</div>
-
-<nav>
-<a href="#about">Über uns</a>
-<a href="#services">Leistungen</a>
-<a href="#preise">Preise</a>
-<a href="#arbeit">Unsere Arbeit</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div>
-
-<h1>Sauberkeit mit Herz & Hand</h1>
-
-<p>Reinigung & Hausmeisterservice in Dortmund</p>
-
-<a class="btn btn-primary" href="tel:+4915901973857">Jetzt anrufen</a>
-
-<a class="btn btn-secondary" href="https://wa.me/4915901973857">WhatsApp</a>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="section-title">Über uns</h2>
-
-<p style="text-align:center">
-Professionelle Reinigung und Hausmeisterservice in Dortmund.
-Wir arbeiten gründlich, zuverlässig und flexibel.
-</p>
-
-</section>
-
-<section id="services">
-
-<h2 class="section-title">Unsere Leistungen</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Wohnungsreinigung</h3>
-<p>Gründliche Reinigung von Wohnungen.</p>
-</div>
-
-<div class="card">
-<h3>Treppenhausreinigung</h3>
-<p>Saubere Treppenhäuser und Flure.</p>
-</div>
-
-<div class="card">
-<h3>Grundreinigung</h3>
-<p>Intensive Reinigung von Böden und Oberflächen.</p>
-</div>
-
-<div class="card">
-<h3>Hausmeisterservice</h3>
-<p>Zuverlässige Objektbetreuung.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="preise">
-
-<h2 class="section-title">Preise</h2>
-
-<div class="prices">
-
-<div class="price-card">
-<h3>Reinigung</h3>
-<div class="price">ab 25 €</div>
-</div>
-
-<div class="price-card">
-<h3>Treppenhaus</h3>
-<div class="price">ab 40 €</div>
-</div>
-
-<div class="price-card">
-<h3>Grundreinigung</h3>
-<div class="price">ab 149 €</div>
-</div>
-
-<div class="price-card">
-<h3>Hausmeisterservice</h3>
-<div class="price">ab 30 €</div>
-</div>
-
-</div>
-
-</section>
-
-<section id="arbeit">
-
-<h2 class="section-title">Unsere Arbeit</h2>
-
-<div class="gallery">
-
-<img src="IMG-20260311-WA0030.jpg" alt="Wohnung Reinigung Dortmund">
-<img src="IMG-20260311-WA0029.jpg" alt="Reinigung Boden Dortmund">
-<img src="IMG-20260311-WA0031.jpg" alt="Reinigung Türen Dortmund">
-<img src="20260305_082956.jpg" alt="Treppenhaus Reinigung Dortmund">
-<img src="IMG-20260311-WA0032.jpg" alt="Boden Reinigung Dortmund">
-<img src="IMG-20260311-WA0035.jpg" alt="Wohnung Reinigung Service Dortmund">
-
-</div>
-
-</section>
-
-<section>
-
-
-<section id="kontakt">
-
-<h2 class="section-title">Kontakt</h2>
-
-<div class="contact-grid">
-
-<div class="contact-box">
-<i class="fas fa-phone"></i>
-<p>015901973857</p>
-</div>
-
-<div class="contact-box">
-<i class="fas fa-envelope"></i>
-<p>dragana12mraovic@gmail.com</p>
-</div>
-
-</div>
-
-<form>
-
-<input type="text" placeholder="Name">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Nachricht"></textarea>
-
-<button>Nachricht senden</button>
-
-</form>
-
-</section>
-
-<section class="map">
-
-<h2 class="section-title">Standort</h2>
-
-<iframe src="https://www.google.com/maps?q=Dortmund&output=embed"></iframe>
-
-</section>
-
-<a class="whatsapp" href="https://wa.me/4915901973857">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span><i class="fa-solid fa-location-dot"></i>Dortmund & Umgebung</span>
+        <span><i class="fa-solid fa-clock"></i>Mo–Sa nach Vereinbarung</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:+4915901973857"><i class="fa-solid fa-phone"></i>01590 1973857</a>
+        <a href="mailto:dragana12mraovic@gmail.com"><i class="fa-solid fa-envelope"></i>E-Mail senden</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#start">
+        <img src="IMG-20260223-WA0000.jpg" alt="Logo E&M Mit Herz & Hand" />
+        <div class="brand-text">
+          <div class="brand-title">E&M Mit Herz & Hand</div>
+          <div class="brand-subtitle">Reinigung · Hausmeisterservice · Gartenpflege</div>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#preise">Preise</a>
+        <a href="#arbeit">Unsere Arbeit</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow">
+            <i class="fa-solid fa-sparkles"></i>
+            Zuverlässiger Service mit persönlicher Betreuung
+          </div>
+          <h1>Sauberkeit, Ordnung und Unterstützung – mit Herz & Hand.</h1>
+          <p>
+            E&M Mit Herz & Hand ist Ihr Ansprechpartner in Dortmund für gründliche Reinigung,
+            Treppenhauspflege, Hausmeisterservice, Gartenpflege und flexible Hilfe rund um Haus,
+            Wohnung und Objekt.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+4915901973857">
+              <i class="fa-solid fa-phone"></i>Jetzt anrufen
+            </a>
+            <a class="btn btn-secondary" href="https://wa.me/4915901973857" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>WhatsApp schreiben
+            </a>
+          </div>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <strong>Gründlich</strong>
+              Sorgfältige und saubere Arbeit
+            </div>
+            <div class="hero-feature">
+              <strong>Flexibel</strong>
+              Termine nach Vereinbarung
+            </div>
+            <div class="hero-feature">
+              <strong>Persönlich</strong>
+              Freundlicher direkter Kontakt
+            </div>
+          </div>
+        </div>
+
+        <aside class="quote-card">
+          <h3>Kurz anfragen</h3>
+          <p>Für Privatkunden, Vermieter, kleine Unternehmen und Hausverwaltungen.</p>
+          <ul class="quote-list">
+            <li><i class="fa-solid fa-check"></i>Wohnungs- und Haushaltsreinigung</li>
+            <li><i class="fa-solid fa-check"></i>Treppenhäuser & Gemeinschaftsflächen</li>
+            <li><i class="fa-solid fa-check"></i>Hausmeisterservice & Kleinaufgaben</li>
+            <li><i class="fa-solid fa-check"></i>Gartenpflege & Außenbereiche</li>
+            <li><i class="fa-solid fa-check"></i>Umzugshilfe nach Absprache</li>
+          </ul>
+          <div class="quote-info">
+            <strong>Hinweis:</strong> Preise starten ab den unten genannten Richtwerten. Der endgültige Preis hängt von Größe, Aufwand, Zustand und Anfahrt ab.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Über uns</div>
+          <h2 class="section-title">Persönlicher Service für Sauberkeit und Werterhalt</h2>
+          <p class="section-text">
+            Wir unterstützen unsere Kunden in Dortmund mit zuverlässigen Dienstleistungen rund um Reinigung,
+            Pflege und Betreuung von Wohn- und Gewerbeobjekten. Freundlichkeit, Pünktlichkeit und saubere Ergebnisse stehen bei uns im Mittelpunkt.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel">
+            <h3 style="font-size:1.6rem; color:var(--secondary); margin-bottom:12px;">Warum Kunden uns wählen</h3>
+            <p style="color:var(--muted);">
+              Wir arbeiten sorgfältig, transparent und lösungsorientiert. Ob regelmäßige Reinigung,
+              Treppenhausservice oder Unterstützung im Alltag – wir passen unsere Leistungen an Ihren Bedarf an.
+            </p>
+            <ul class="about-list">
+              <li>
+                <i class="fa-solid fa-broom"></i>
+                <div><strong>Gründliche Reinigung</strong><br />Saubere Oberflächen, Böden, Küchen, Bäder und Wohnbereiche.</div>
+              </li>
+              <li>
+                <i class="fa-solid fa-building"></i>
+                <div><strong>Zuverlässige Objektbetreuung</strong><br />Treppenhäuser, Gemeinschaftsflächen und kleine Aufgaben rund ums Objekt.</div>
+              </li>
+              <li>
+                <i class="fa-solid fa-seedling"></i>
+                <div><strong>Flexible Zusatzleistungen</strong><br />Gartenpflege, leichte Umzugshilfe und individuelle Unterstützung nach Absprache.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 style="font-size:1.6rem; color:var(--secondary); margin-bottom:12px;">Unser Versprechen</h3>
+            <p style="color:var(--muted);">
+              Wir möchten, dass Sie sich auf einen sauberen, gepflegten und angenehmen Eindruck verlassen können – in Ihrer Wohnung, im Treppenhaus oder auf dem Grundstück.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>100%</strong>
+                Persönlicher Kontakt und individuelle Abstimmung
+              </div>
+              <div class="stat">
+                <strong>Flexibel</strong>
+                Einsatzzeiten nach Vereinbarung möglich
+              </div>
+              <div class="stat">
+                <strong>Fair</strong>
+                Klare Richtpreise und transparente Kommunikation
+              </div>
+              <div class="stat">
+                <strong>Lokal</strong>
+                Für Dortmund und die nähere Umgebung
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Leistungen</div>
+          <h2 class="section-title">Unsere Dienstleistungen im Überblick</h2>
+          <p class="section-text">
+            Ob einmalige Unterstützung oder regelmäßige Betreuung: Wir bieten praktische Leistungen für private und kleinere gewerbliche Kunden.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+            <h3>Wohnungsreinigung</h3>
+            <p>Regelmäßige oder einmalige Reinigung für ein sauberes Zuhause und ein angenehmes Wohngefühl.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Staubsaugen und Wischen</li>
+              <li><i class="fa-solid fa-check"></i>Küche und Bad reinigen</li>
+              <li><i class="fa-solid fa-check"></i>Oberflächen und allgemeine Ordnung</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-stairs"></i></div>
+            <h3>Treppenhausreinigung</h3>
+            <p>Gepflegte Eingangsbereiche, Flure und Treppenhäuser für Mieter, Besucher und Eigentümer.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Treppen und Geländer</li>
+              <li><i class="fa-solid fa-check"></i>Eingangstüren und Glasflächen</li>
+              <li><i class="fa-solid fa-check"></i>Regelmäßige Pflegeintervalle</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-soap"></i></div>
+            <h3>Grundreinigung</h3>
+            <p>Intensive Reinigung bei stärkerer Verschmutzung oder vor besonderen Anlässen.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Tiefenreinigung von Böden</li>
+              <li><i class="fa-solid fa-check"></i>Reinigung schwer erreichbarer Bereiche</li>
+              <li><i class="fa-solid fa-check"></i>Ideal vor Übergaben oder Neubezug</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Hausmeisterservice</h3>
+            <p>Praktische Unterstützung für kleine Aufgaben und die laufende Betreuung von Objekten.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Sichtkontrollen und Ordnung</li>
+              <li><i class="fa-solid fa-check"></i>Kleine Hilfsarbeiten</li>
+              <li><i class="fa-solid fa-check"></i>Betreuung nach Absprache</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Gartenpflege</h3>
+            <p>Saubere und gepflegte Außenbereiche für ein ordentliches Gesamtbild Ihres Hauses oder Grundstücks.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Laub und kleinere Pflegearbeiten</li>
+              <li><i class="fa-solid fa-check"></i>Wege und Außenflächen</li>
+              <li><i class="fa-solid fa-check"></i>Saisonale Unterstützung</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-truck"></i></div>
+            <h3>Umzugshilfe</h3>
+            <p>Flexible Hilfe bei kleinen Umzügen und Transportaufgaben nach vorheriger Absprache.</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i>Hilfe beim Tragen und Organisieren</li>
+              <li><i class="fa-solid fa-check"></i>Unterstützung bei Vorbereitung und Ordnung</li>
+              <li><i class="fa-solid fa-check"></i>Individuelle Planung</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="preise">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Preise</div>
+          <h2 class="section-title">Faire Richtpreise für unsere Leistungen</h2>
+          <p class="section-text">
+            Die folgenden Preise dienen als Orientierung. Für ein verbindliches Angebot erstellen wir gerne eine individuelle Einschätzung nach Umfang und Aufwand.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-badge">Beliebte Leistung</div>
+            <h3>Reinigung</h3>
+            <div class="price-amount">ab 25 € / Std.</div>
+            <p>Für Wohnungsreinigung und allgemeine Haushaltsreinigung.</p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i>Privathaushalte</li>
+              <li><i class="fa-solid fa-check"></i>Einmalig oder regelmäßig</li>
+              <li><i class="fa-solid fa-check"></i>Individuell planbar</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <div class="price-badge">Objektpflege</div>
+            <h3>Hausmeisterservice & Gartenpflege</h3>
+            <div class="price-amount">ab 30 € / Std.</div>
+            <p>Für kleinere Objektarbeiten, Betreuung und Außenpflege.</p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i>Kleine Hilfsaufgaben</li>
+              <li><i class="fa-solid fa-check"></i>Pflege von Außenbereichen</li>
+              <li><i class="fa-solid fa-check"></i>Flexible Einsätze</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <div class="price-badge">Nach Absprache</div>
+            <h3>Umzugshilfe</h3>
+            <div class="price-amount">ab 35 € / Std.</div>
+            <p>Unterstützung bei kleineren Umzügen und Transporthilfe.</p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i>Kleine Umzüge</li>
+              <li><i class="fa-solid fa-check"></i>Flexible Unterstützung</li>
+              <li><i class="fa-solid fa-check"></i>Individuelle Planung</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div>
+            <h3 style="font-size:1.7rem; margin-bottom:10px;">Sie möchten ein genaues Angebot?</h3>
+            <p>
+              Senden Sie uns einfach Fotos, die Objektgröße und Ihren gewünschten Termin per WhatsApp oder E-Mail.
+              So können wir schneller einschätzen, welcher Aufwand nötig ist.
+            </p>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <a class="btn btn-primary" href="https://wa.me/4915901973857" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>Angebot anfragen
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arbeit">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Unsere Arbeit</div>
+          <h2 class="section-title">Einblicke in unsere Einsätze</h2>
+          <p class="section-text">
+            Nutzen Sie Ihre eigenen Bilder, um Vertrauen aufzubauen. Diese Galerie zeigt Beispiele Ihrer Arbeit und kann jederzeit erweitert werden.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <img src="IMG-20260311-WA0030.jpg" alt="Gründliche Wohnungsreinigung in Dortmund" />
+          <img src="IMG-20260311-WA0029.jpg" alt="Sauber gereinigter Boden in Dortmund" />
+          <img src="IMG-20260311-WA0031.jpg" alt="Gereinigte Türen und Oberflächen" />
+          <img src="20260305_082956.jpg" alt="Treppenhausreinigung in Dortmund" />
+          <img src="IMG-20260311-WA0032.jpg" alt="Reinigung von Bodenflächen" />
+          <img src="IMG-20260311-WA0035.jpg" alt="Saubere Wohnungsräume nach Reinigung" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Kundenstimmen</div>
+          <h2 class="section-title">Was eine gute Dienstleistung ausmacht</h2>
+          <p class="section-text">
+            Sie können hier später echte Kundenbewertungen von Google, WhatsApp oder schriftlichen Rückmeldungen einfügen.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+            <p>„Sehr freundlich, pünktlich und ordentlich. Die Wohnung war nach der Reinigung wirklich sauber und frisch.“</p>
+            <div class="review-name">Kundin aus Dortmund</div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+            <p>„Zuverlässige Hilfe beim Treppenhaus und immer guter Kontakt. Klare Empfehlung für kleine Objekte.“</p>
+            <div class="review-name">Hausverwaltung</div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></div>
+            <p>„Schnelle Rückmeldung, fairer Preis und saubere Arbeit. Genau so stellt man sich Service vor.“</p>
+            <div class="review-name">Privatkunde</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ablauf">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">So läuft es ab</div>
+          <h2 class="section-title">In vier einfachen Schritten zu Ihrem Termin</h2>
+          <p class="section-text">Schnell, unkompliziert und direkt abgestimmt.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Anfrage senden</h3>
+            <p>Kontaktieren Sie uns per Telefon, WhatsApp oder E-Mail mit Ihrem Anliegen.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Details abstimmen</h3>
+            <p>Wir klären Größe, Aufwand, Terminwunsch und eventuelle Besonderheiten.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Angebot erhalten</h3>
+            <p>Sie erhalten eine transparente Einschätzung oder ein individuelles Angebot.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Service vor Ort</h3>
+            <p>Wir kommen pünktlich und erledigen die vereinbarte Arbeit zuverlässig.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">FAQ</div>
+          <h2 class="section-title">Häufige Fragen</h2>
+          <p class="section-text">Einige Informationen, die Kunden oft vorab wissen möchten.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Arbeiten Sie nur in Dortmund?</h3>
+            <p>Unser Schwerpunkt liegt in Dortmund. Einsätze in der Umgebung sind nach Absprache möglich.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Sind regelmäßige Termine möglich?</h3>
+            <p>Ja, wir bieten sowohl einmalige Einsätze als auch wiederkehrende Termine an.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Wie bekomme ich ein genaues Angebot?</h3>
+            <p>Am besten senden Sie uns eine kurze Beschreibung, Fotos und die Größe des Objekts.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Bringen Sie Reinigungsmittel mit?</h3>
+            <p>Das können wir individuell abstimmen. Bitte geben Sie Ihren Wunsch einfach bei der Anfrage an.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Gibt es feste Preise?</h3>
+            <p>Die angegebenen Preise sind Richtpreise. Der tatsächliche Preis hängt vom Arbeitsaufwand ab.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Wie schnell kann ein Termin stattfinden?</h3>
+            <p>Je nach Auslastung oft kurzfristig. Schreiben oder rufen Sie uns einfach an.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Kontakt</div>
+          <h2 class="section-title">Jetzt unverbindlich anfragen</h2>
+          <p class="section-text">
+            Nutzen Sie den direkten Kontakt per Telefon oder WhatsApp – oder senden Sie uns eine Nachricht über das Formular.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-stack">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Telefon</h3>
+              <p>Für schnelle Rückfragen und Terminabsprachen.</p>
+              <p><a href="tel:+4915901973857">01590 1973857</a></p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <h3>WhatsApp</h3>
+              <p>Senden Sie gerne Fotos und eine kurze Beschreibung Ihres Anliegens.</p>
+              <p><a href="https://wa.me/4915901973857" target="_blank" rel="noopener">Nachricht schreiben</a></p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h3>E-Mail</h3>
+              <p>Für Anfragen, Angebote und Terminwünsche.</p>
+              <p><a href="mailto:dragana12mraovic@gmail.com">dragana12mraovic@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 style="font-size:1.55rem; margin-bottom:10px; color:var(--secondary);">Kontaktformular</h3>
+            <p style="color:var(--muted); margin-bottom:20px;">
+              Dieses Formular ist optisch fertig. Damit Nachrichten wirklich gesendet werden,
+              musst du später noch einen Formular-Dienst einbinden, z. B. Formspree, Web3Forms oder EmailJS.
+            </p>
+            <form action="#" method="post">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Ihr Name" required />
+                <input type="tel" name="telefon" placeholder="Telefonnummer" />
+              </div>
+              <div class="form-row">
+                <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+                <select name="leistung">
+                  <option value="">Gewünschte Leistung wählen</option>
+                  <option>Wohnungsreinigung</option>
+                  <option>Treppenhausreinigung</option>
+                  <option>Grundreinigung</option>
+                  <option>Hausmeisterservice</option>
+                  <option>Gartenpflege</option>
+                  <option>Umzugshilfe</option>
+                </select>
+              </div>
+              <textarea name="nachricht" placeholder="Beschreiben Sie kurz Ihr Anliegen, die Größe des Objekts und Ihren Wunschtermin." required></textarea>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>Nachricht senden
+              </button>
+              <div class="form-note">
+                Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage gespeichert und verarbeitet werden.
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps?q=Dortmund&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="IMG-20260223-WA0000.jpg" alt="E&M Mit Herz & Hand Logo" />
+            <div>
+              <div class="footer-title">E&M Mit Herz & Hand</div>
+              <div class="footer-text">Reinigung, Hausmeisterservice und Gartenpflege in Dortmund</div>
+            </div>
+          </div>
+          <p class="footer-text">
+            Persönlicher Service für Privatkunden, Vermieter und kleinere Objekte. Zuverlässig, freundlich und flexibel.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom:16px;">Schnellzugriff</h3>
+          <div class="footer-links">
+            <a href="#about">Über uns</a>
+            <a href="#services">Leistungen</a>
+            <a href="#preise">Preise</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 E&M Mit Herz & Hand · Alle Rechte vorbehalten
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/4915901973857" target="_blank" rel="noopener" aria-label="WhatsApp öffnen">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
+
