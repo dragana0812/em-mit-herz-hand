@@ -462,7 +462,6 @@
 
     .services-grid,
     .pricing-grid,
-    .gallery,
     .reviews-grid,
     .faq-grid {
       display: grid;
@@ -574,21 +573,6 @@
 
     .highlight-box p {
       color: rgba(255, 255, 255, 0.88);
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s ease;
-      border: 1px solid rgba(226, 232, 240, 0.85);
-      background: white;
-    }
-
-    .gallery img:hover {
-      transform: translateY(-5px);
     }
 
     .review-stars {
@@ -774,6 +758,52 @@
       transform: translateY(-3px);
     }
 
+    /* === GALLERY SLIDER === */
+    .gallery-slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 24px;
+    }
+
+    .gallery-track {
+      display: flex;
+      width: max-content;
+      animation: scrollGallery 35s linear infinite;
+      gap: 20px;
+    }
+
+    .gallery-track img {
+      width: 320px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      background: white;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-track img:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-slider:hover .gallery-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
     @media (max-width: 1040px) {
       .hero-inner,
       .about-grid,
@@ -783,7 +813,6 @@
       .footer-grid,
       .services-grid,
       .pricing-grid,
-      .gallery,
       .reviews-grid,
       .faq-grid,
       .steps {
@@ -825,7 +854,6 @@
       .hero-features,
       .services-grid,
       .pricing-grid,
-      .gallery,
       .reviews-grid,
       .faq-grid,
       .steps,
@@ -859,6 +887,11 @@
 
       section {
         padding: 70px 0;
+      }
+
+      .gallery-track img {
+        width: 220px;
+        height: 300px;
       }
     }
   </style>
@@ -1188,45 +1221,43 @@
       </div>
     </section>
 
-  <section id="arbeit">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">Unsere Arbeit</div>
-      <h2 class="section-title">Einblicke in unsere Einsätze</h2>
-      <p class="section-text">
-        Nutzen Sie Ihre eigenen Bilder, um Vertrauen aufzubauen.
-      </p>
-    </div>
+    <section id="arbeit">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Unsere Arbeit</div>
+          <h2 class="section-title">Einblicke in unsere Einsätze</h2>
+          <p class="section-text">
+            Nutzen Sie Ihre eigenen Bilder, um Vertrauen aufzubauen.
+          </p>
+        </div>
 
-    <div class="gallery-slider">
-      <div class="gallery-track">
-        <img src="1000029614.png" />
-        <img src="1000029618.png" />
-        <img src="1000029628.png" />
-        <img src="1000029633.png" />
-        <img src="1000029634.png" />
-        <img src="1000030041.png" />
-        <img src="1000030043.png" />
-        <img src="1000030045.png" />
-        <img src="1000030048.png" />
-        <img src="1000030051.png" />
+        <div class="gallery-slider">
+          <div class="gallery-track">
+            <img src="1000029614.png" alt="Reinigungsergebnis in Dortmund" />
+            <img src="1000029618.png" alt="Sauber gepflegte Räume in Dortmund" />
+            <img src="1000029628.png" alt="Professionelle Reinigung in Dortmund" />
+            <img src="1000029633.png" alt="Ordentliche und saubere Wohnbereiche" />
+            <img src="1000029634.png" alt="Gereinigte Flächen und Oberflächen" />
+            <img src="1000030041.png" alt="Treppenhaus und Objektpflege in Dortmund" />
+            <img src="1000030043.png" alt="Saubere Bodenflächen nach Reinigung" />
+            <img src="1000030045.png" alt="Gründliche Reinigung mit gepflegtem Ergebnis" />
+            <img src="1000030048.png" alt="Wohnungsreinigung und gepflegte Räume" />
+            <img src="1000030051.png" alt="Zuverlässige Reinigungsarbeiten in Dortmund" />
 
-        <!-- DUPLIKAT ZA LOOP -->
-        <img src="1000029614.png" />
-        <img src="1000029618.png" />
-        <img src="1000029628.png" />
-        <img src="1000029633.png" />
-        <img src="1000029634.png" />
-        <img src="1000030041.png" />
-        <img src="1000030043.png" />
-        <img src="1000030045.png" />
-        <img src="1000030048.png" />
-        <img src="1000030051.png" />
+            <img src="1000029614.png" alt="Reinigungsergebnis in Dortmund" />
+            <img src="1000029618.png" alt="Sauber gepflegte Räume in Dortmund" />
+            <img src="1000029628.png" alt="Professionelle Reinigung in Dortmund" />
+            <img src="1000029633.png" alt="Ordentliche und saubere Wohnbereiche" />
+            <img src="1000029634.png" alt="Gereinigte Flächen und Oberflächen" />
+            <img src="1000030041.png" alt="Treppenhaus und Objektpflege in Dortmund" />
+            <img src="1000030043.png" alt="Saubere Bodenflächen nach Reinigung" />
+            <img src="1000030045.png" alt="Gründliche Reinigung mit gepflegtem Ergebnis" />
+            <img src="1000030048.png" alt="Wohnungsreinigung und gepflegte Räume" />
+            <img src="1000030051.png" alt="Zuverlässige Reinigungsarbeiten in Dortmund" />
+          </div>
+        </div>
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <section>
       <div class="container">
